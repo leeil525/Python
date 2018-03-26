@@ -1,4 +1,4 @@
-import pythoncom, pyHook
+import pythoncom,pyHook
 
 def OnMouseEvent(event):
     # called when mouse events are received
@@ -11,7 +11,7 @@ def OnMouseEvent(event):
     print('Wheel:',event.Wheel)
     print('Injected:',event.Injected)
     print('---')
-    return  True
+    return True
 
 def onKeyboardEvent(event):
     print("MessageName:", event.MessageName)
@@ -28,17 +28,18 @@ def onKeyboardEvent(event):
     print("Alt", event.Alt)
     print("Transition", event.Transition)
     print("---")
-
-# return True to pass the event to other handlers
     return True
+
+
+
 
 # create a hook manager
 hm = pyHook.HookManager()    #创建管理对象
 # watch for all mouse events
 hm.KeyDown=onKeyboardEvent   #传入函数,监听键盘
 hm.HookKeyboard()  #设置钩子
-hm.MouseAll = OnMouseEvent   #传入函数,监听鼠标
-hm.HookMouse()  #设置钩子
+# hm.MouseAll = OnMouseEvent   #传入函数,监听鼠标
+# hm.HookMouse()  #设置钩子
 
 # wait forever
-pythoncom.PumpMessages()
+pythoncom.PumpMessages()  #进入循环 需要手动关闭
