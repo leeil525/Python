@@ -1,0 +1,16 @@
+setup.py
+First/__init__.py
+First/items.py
+First/middlewares.py
+First/pipelines.py
+First/settings.py
+First/spiders/__init__.py
+First/spiders/douluo.py
+First/spiders/huxiu.py
+First/spiders/news.py
+First/spiders/taobao.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
