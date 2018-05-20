@@ -1,0 +1,10 @@
+docker search tutorial 搜索可用的docker镜像
+docker pull learn/tutorial  下载容器镜像
+docker run learn/tutorial echo "hello word"  在docker容器中运行hello world!
+docker run learn/tutorial apt-get install -y ping 在容器中安装新的程序
+docker commit abc learn/ping 保存对容器的修改 abc是ID用docker ps -l 
+docker run lean/ping ping www.google.com  运行新的镜像
+docker inspect efe 检查运行中的镜像
+docker push learn/ping  发布docker镜像
+
+
