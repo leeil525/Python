@@ -1,6 +1,6 @@
-from multiprocessing import Process
-import os
-import time
+#from multiprocessing import Process
+#import os
+#import time
 '''multiprocessing'''
 # def run_proc(name):
 #     time.sleep(3)
@@ -18,20 +18,20 @@ import time
 #         p.join()
 #     print('Process end.')
 '''Pool'''
-#import multiprocessing
-#import time
-#def func(msg,i):
-#    print('msg:',msg)
-#    time.sleep(i)
-#    print('end')
-#if __name__=='__main__':
-#    pool=multiprocessing.Pool(processes=4)
-#    for i in range(5):
-#        msg='hello %d'%(i)
-#        pool.apply(func,(msg,i,)) #apply阻塞 appy_async不阻塞
-#    print('hhahahha~~~~')
-#    pool.close()
-#    pool.join() #在close后面
+# import multiprocessing
+# import time
+# def func1(msg,i):
+#     print('msg:',msg)
+#     time.sleep(i)
+#     print('end123')
+# if __name__=='__main__':
+#     pool=multiprocessing.Pool(processes=4)
+#     for i in range(5):
+#         msg='hello %d'%(i)
+#         pool.apply_async(func1,args=(msg,i,)) #apply阻塞 appy_async不阻塞
+#     print('hhahahha~~~~')
+#     pool.close()
+#     pool.join() #在close后面
 
 '''Queue'''
 # from multiprocessing import Process,Queue
