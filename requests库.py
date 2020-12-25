@@ -6,6 +6,8 @@
 # r.json() 返回JSON格式
 # r.status_code 返回成功为200
 # r.text 返回解析的结果
+>>> r.encoding='utf-8'
+>>> print(r.text)  中文
 # r.headers 返回请求头部 可以在请求的时候修改头部 r=requests.get('',headers=headers)
 # r.cookies Cookies传递 r=requests.get('',cookies=dict(a='b'))
 # r=requests.post("http://www.baidu.com",data={'key':'value'}) POST请求 加密发送的信息 密码
