@@ -58,6 +58,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities #
 #element1 = browser.find_element_by_xpath('//*[@id="banner_link"]/div/div/a')
 #action_chains = ActionChains(browser)
 #action_chains.drag_and_drop(element2, element1).perform()  #2拖到1
+#ActionChains(browser).drag_and_drop_by_offset(element2,10,10).perform() #把element2拖动（10，10）的距离，即向右下方拖动
 
 
 #browser.close() #关闭浏览器
