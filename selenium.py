@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys   #输入的键盘位键操作
 from selenium.webdriver.support.ui import Select  #选项卡操作
-from selenium.webdriver.common.action_chains import ActionChains       #拖拽元素用到的*不过失败了(┬＿┬)
+from selenium.webdriver import ActionChains  #拖拽元素
 from selenium.webdriver.chrome.options import Options #设置Chrome手机模式
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities #设置PhantomJS手机模式
 
@@ -53,11 +53,11 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities #
 #select.select_by_value(value)         #根据文字来选择
 #select.deselect_all()                 #取消全部的选择
 
-'''不行(┬＿┬)下次再看看'''
+'''拖拽元素'''
 #element2 = browser.find_element_by_xpath('//*[@id="banner_link"]/div/div/form/input')
 #element1 = browser.find_element_by_xpath('//*[@id="banner_link"]/div/div/a')
 #action_chains = ActionChains(browser)
-#action_chains.move_by_offset(100,100).perform()
+#action_chains.drag_and_drop(element2, element1).perform()  #2拖到1
 
 
 #browser.close() #关闭浏览器
