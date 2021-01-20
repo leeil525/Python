@@ -6,7 +6,7 @@ from xlutils.copy import copy
 # worksheet.write(0,0,label='this is test') #在sheet中操作
 # worksheet.write_merge(1, 5, 3, 4 ,'hello') #多行合并中写入
 # workbook.save('excel_test.xls')  #保存
-# data=xlrd.open_workbook('excel_test.xls')  #打开文件
+# data=xlrd.open_workbook('excel_test.xls')  #打开文件    读取不到的话先另存为csv再另存为xls
 # sheet=data.sheet_by_index(0)  #读取第一个表单
 # print(sheet.name,sheet.nrows,sheet.ncols)  #输出表单名字 行数 列数
 # rows = sheet.row_values(1)  #获取整行数据
